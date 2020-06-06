@@ -23,8 +23,7 @@ class FeedsPlugin extends Plugin
     public function setSiteDetails(SiteWriteStarted $event)
     {
         $siteDetails  = $event->getSite()->getMetaData();
-        $this->siteDetails =
-         [
+        $this->siteDetails = [
             'title' => $siteDetails['name'] ?? '',
             'url' => $siteDetails['url'] ?? '',
             'description' => $siteDetails['description'] ?? '',
