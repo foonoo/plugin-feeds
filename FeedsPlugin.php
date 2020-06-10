@@ -1,11 +1,11 @@
 <?php
 
-namespace nyansapow\plugins\contrib\feeds;
+namespace foonoo\plugins\contrib\feeds;
 
-use nyansapow\events\SiteWriteStarted;
-use nyansapow\Plugin;
-use nyansapow\events\PagesReady;
-use nyansapow\content\SerialContentInterface;
+use foonoo\events\SiteWriteStarted;
+use foonoo\Plugin;
+use foonoo\events\PagesReady;
+use foonoo\content\SerialContentInterface;
 
 class FeedsPlugin extends Plugin
 {
