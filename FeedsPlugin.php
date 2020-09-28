@@ -4,7 +4,7 @@ namespace foonoo\plugins\contrib\feeds;
 
 use foonoo\events\SiteWriteStarted;
 use foonoo\Plugin;
-use foonoo\events\PagesReady;
+use foonoo\events\ContentReady;
 use foonoo\content\SerialContentInterface;
 
 class FeedsPlugin extends Plugin
@@ -15,7 +15,7 @@ class FeedsPlugin extends Plugin
     public function getEvents()
     {
         return [
-            PagesReady::class => [$this, 'generateFeeds'],
+            ContentReady::class => [$this, 'generateFeeds'],
             SiteWriteStarted::class => [$this, 'setSiteDetails']
         ];
     }
@@ -31,7 +31,7 @@ class FeedsPlugin extends Plugin
         ];
     }
 
-    public function generateFeeds(PagesReady $event)
+    public function generateFeeds(ContentReady $event)
     {
         foreach($event->getPages() as $page)
         {
