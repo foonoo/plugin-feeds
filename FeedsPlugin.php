@@ -42,7 +42,7 @@ class FeedsPlugin extends Plugin
             $post['url'] = $page->getDestination();
             $this->feedItems[] = $post;
         }
-        $feedPage = $event->getContentFactory()->create(__DIR__ . "/templates/feed.tpl.php", "feed.xml");
+        $feedPage = $event->getContentFactory()->create(__DIR__ . "/templates/feed.tplphp", "feed.xml");
         $feedData = $this->siteDetails;
         $feedData['posts'] = $this->feedItems;
         $feedPage->setData($feedData);
