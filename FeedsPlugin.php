@@ -46,7 +46,6 @@ class FeedsPlugin extends Plugin
         $feedData = $this->siteDetails;
         $feedData['posts'] = $this->feedItems;
         $feedPage->setData($feedData);
-        $feedPage->setLayout(false);
         $event->addPage($feedPage);
     }
 }

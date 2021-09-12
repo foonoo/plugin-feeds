@@ -1,3 +1,6 @@
+---
+layout: false
+---
 <?php
 $items = [];
 foreach($posts as $post)
