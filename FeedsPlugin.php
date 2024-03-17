@@ -1,6 +1,6 @@
 <?php
 
-namespace foonoo\plugins\contrib\feeds;
+namespace foonoo\plugins\foonoo\feeds;
 
 use foonoo\events\SiteWriteStarted;
 use foonoo\Plugin;
